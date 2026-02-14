@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                margin: 0;
+                padding: 20px;
+                background-color: azure;
+                font-family: sans-serif;
+            }
+            .color {
+                background-color: beige;
+               
+            }
+
+            .header-title {
+                display: flex;
+                justify-content: center;
+                background-color: lightcyan;
+                color: black;
+                padding: 10px;
+                border-radius: 5px;
+                text-align: center;
+            }
+
+            .profile-pic-container {
+                width: 200px;
+                border-radius: 50%;
+                margin: 20px auto;
+                overflow: hidden;
+                border: 5px solid white;
+            }
+
+            .profile-pic-container img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+
+            .marquee-title {
+                background-color: aliceblue;
+                color: black;
+                padding: 10px;
+                border-radius: 5px;
+                text-align: center;
+            }
+
+            /* Button Styling */
+            .button-container {
+                text-align: center;
+                margin: 20px 0;
+            }
+
+            button {
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+                background-color: #007bff;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                margin: 0 5px;
+            }
+
+            button:hover {
+                background-color: #0056b3;
+            }
+
+            /* Content Sections Styling */
+            .content-section {
+                background: white;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                max-width: 800px;
+                margin: 0 auto;
+                margin-top: 20px;
+            }
+
+            /* Hidden by default */
+            .hidden {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="header-title">Steve Brando Tacay</h1>
+
+        <div class="profile-pic-container">
+            <img src="https://shapes.inc/api/public/avatar/wonwoo-kwzb" alt="Profile Picture"/>
+        </div>
+
+        <h1 class="marquee-title"><marquee> You hate 6 7 but the enemy is closer than you think</marquee></h1>
+
+        <div class="button-container">
+            <button onclick="showSection('bio')">About Me</button>
+            <button onclick="showSection('funfacts')">Fun Facts</button>
+            <button onclick="showSection('Social')">Social</button>
+        </div>
+
+        <section id="bio" class="content-section hidden">
+            <h2 class ="color">About Me</h2>
+            <p>A long long time ago, November 27, 2007 Just recently turn 2 in November 05, my father died. When I was growing up i never felt jealous to other people having complete family, because my mother 
+                is with me lol. In all seriousness, I am Steve Brando S. Tacay. Born in November 05, 2005, I am 20 years old, and I live in Cagayan De Oro City.</p>
+        </section>
+
+        <section class="color" id="funfacts" class="content-section hidden">
+            <h3> Things I like</h3>
+            <ul>
+                <li>I like Cats and dogs</li>
+                <li>I like Chocolates</li>
+                <li>I like red velvet and Black Forest Cake</li>
+            </ul>
+            
+            <h3>Games I like to play</h3>
+            <ul>
+                <li>Reverse 1999</li>
+                <li>Genshin Impact</li>
+                <li>Honkai: Star Rail</li>
+                <li>Cookie run Kingdom</li>
+                <li>Teamfight Tactics</li>
+            </ul>
+
+            <h3>I have two dogs</h3>
+            <ul>
+                <li>Salad</li>
+                <li>tikee</li>
+            </ul>
+
+            <h3>Dream Job</h3>
+            <ul>
+                <li>Psychologist</li>
+                <li>Lawyer</li>
+                <li>Application Developer</li>
+            </ul>
+        </section>
+
+        <section class="color" id="Social" class="content-section hidden">
+            <h2>Connect with Me</h2>
+            <a href="https://www.instagram.com/hiiro._.o/" target="_blank">Instagram</a>
+        </section>
+
+        <script>
+            function showSection(sectionId) {
+                // 1. Hide all sections
+                document.getElementById('bio').classList.add('hidden');
+                document.getElementById('funfacts').classList.add('hidden');
+                document.getElementById('Social').classList.add('hidden');
+
+                // 2. Show the requested section
+                document.getElementById(sectionId).classList.remove('hidden');
+            }
+        </script>
+    </body>
+</html>

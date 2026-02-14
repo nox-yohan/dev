@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: azure;
+    font-family: sans-serif;
+}
+
+.header-title {
+    display: flex;
+    justify-content: center;
+    background-color: lightcyan;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.profile-pic-container {
+    width: 200px;
+    border-radius: 50%;
+    margin: 20px auto;
+    overflow: hidden;
+    border: 5px solid white;
+}
+
+.profile-pic-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.marquee-title {
+    background-color: aliceblue;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Button Styling */
+.button-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Content Sections Styling */
+.content-section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/* Hidden by default */
+.hidden {
+    display: none;
+}
